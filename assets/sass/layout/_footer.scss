@@ -1,0 +1,32 @@
+
+.footer{
+	background-color: $black;
+	color:$white;
+	text-align: center;
+	padding: 30px;
+
+	@include respond-to('large'){
+		display: flex;
+		justify-content:space-between;
+	}
+}
+.footer__input{
+	padding: 10px 30px;
+	width: 40%;
+	margin:  0 auto;
+	margin-bottom: 10px;
+	display: block;
+
+	&--focus:focus{
+		background: $tangerine;
+		box-shadow: 0 0 0 0.25rem;
+
+	}
+}
+.footer__copy{
+	width: 70%;
+	margin: 0 auto;
+padding: 10px;
+font-family: $poppins;
+font-weight: 400;
+}

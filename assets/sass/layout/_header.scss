@@ -1,0 +1,21 @@
+
+.header{
+	height:44vh; 
+	width: 100%;
+  overflow: hidden;
+  margin-top: 5rem;
+	background-size: cover;
+
+ @include respond-to('large'){
+height: 57vh;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 5rem;
+
+ }
+
+}
+	
+	
+
+

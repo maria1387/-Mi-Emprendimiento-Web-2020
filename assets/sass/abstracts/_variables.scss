@@ -1,0 +1,18 @@
+//Color Scheme
+$white:#ffffff;
+$black:#000000;
+$sable:#060606;
+$gray:#515151;
+$charcoal:#2E1503;
+$tangerine:#FFAF6D;
+$orange:#FFA500;
+
+
+
+$breakpoints: (
+  'small': (min-width: 576px),
+  'medium': (min-width: 768px),
+  'large': (min-width: 992px),
+  'extra-large': (min-width: 1200px),
+);
+
