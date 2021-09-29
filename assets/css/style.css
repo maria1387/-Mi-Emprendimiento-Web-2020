@@ -275,6 +275,7 @@ a:hover i {
   padding: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -703,6 +704,7 @@ nav {
   color: #ffffff;
   text-align: center;
   padding: 30px;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
