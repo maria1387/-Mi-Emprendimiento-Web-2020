@@ -60,10 +60,28 @@
 }
 
 .course__image1{
-height: 30vh;
-@include respond-to('large'){
+  height: 30vh;
+  animation-duration: 4s;
+	animation-name: animCourse;
+  @include respond-to('large'){
   height: 45vh;
 }
+  }
+  
+  @keyframes animCourse {
+	from {
+	  margin-left: 100%;
+	  width: 100%;
+	}
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+}
+
+.course__image1:hover{ 
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5)
 }
 .course__icon{
 text-align: center;
