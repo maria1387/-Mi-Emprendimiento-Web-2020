@@ -1,0 +1,16 @@
+.article{
+	animation-duration: 4s;
+	animation-name: animCourse;
+	margin: 20px;
+  }
+  
+  @keyframes animCourse {
+	from {
+	  margin-left: 100%;
+	  width: 100%;
+	}
+	to {
+	  margin-left: 0%;
+	  width: 100%;
+	}
+  }

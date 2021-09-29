@@ -106,8 +106,8 @@ table {
   margin-bottom: 10px;
 }
 
-.course_body {
-  width: 80%;
+.course__body {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -147,24 +147,36 @@ table {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   padding: 5px 0;
+  animation-name: course-color;
+  animation-duration: 5s;
 }
 
-.course__cont-img {
-  text-align: center;
+@keyframes course-color {
+  from {
+    background-color: #515151;
+  }
+  to {
+    background-color: #FFA500;
+  }
 }
-
 .course__image1 {
-  height: 40vh;
+  height: 5vh;
+  width: 60%;
 }
 
 .course__icon {
   text-align: center;
 }
 
-.lista a {
+.course__list a {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
+  font-size: 14px;
+}
+
+.course__item {
+  margin-left: 10px;
 }
 
 a i {
@@ -187,10 +199,30 @@ a:hover i {
   color: red;
 }
 
+.course__cont:hover {
+  -webkit-animation: 1s prueba 1;
+}
+
+@-webkit-keyframes prueba {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+  }
+  70% {
+    -webkit-transform: scale(0.9);
+  }
+}
 .footer__btn {
   background-color: #FFAF6D;
-  color: #ffffff;
-  padding: 0.7rem 0.9rem;
+  color: #2E1503;
+  font-weight: 700;
+  padding: 0.7rem 0.3rem;
+  border-radius: 8px;
+  font-size: 12px;
 }
 .footer__btn--hover:hover {
   background: #ffffff;
@@ -203,13 +235,9 @@ nav {
 
 .nav {
   background: #000000;
-  height: 5rem;
+  height: 60px;
   position: fixed;
   top: 0;
-}
-
-.nav__logo {
-  height: 50px;
 }
 
 .nav__container {
@@ -226,6 +254,23 @@ nav {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  font-size: 12px;
+  --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.nav__item::after {
+  content: "";
+  display: block;
+  background: #ffffff;
+  width: 90%;
+  margin-top: 3px;
+  height: 3px;
+  clip-path: var(--clippy);
+  transition: clip-path 1s;
+}
+
+.nav__item:hover {
+  --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .nav__img {
@@ -234,7 +279,7 @@ nav {
 }
 
 .nav__img:hover {
-  color: aqua;
+  color: #FFA500;
 }
 
 .nav__menu {
@@ -254,7 +299,7 @@ nav {
 
   .nav__menu {
     position: fixed;
-    top: 80px;
+    top: 60px;
     bottom: 0;
     background: #FFAF6D;
     height: 200px;
@@ -272,22 +317,59 @@ nav {
     clip-path: circle(100% at center);
   }
 }
+.nav__logo {
+  height: 40px;
+  animation-duration: 5s;
+  animation-name: animacionLogo;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animacionLogo {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotateY(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotateY(180deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotateY(360deg);
+  }
+}
 .header {
-  height: 44vh;
+  height: 32vh;
   width: 100%;
   overflow: hidden;
-  margin-top: 5rem;
+  margin-top: 60px;
   background-size: cover;
 }
 @media (min-width: 992px) {
   .header {
-    height: 57vh;
+    height: 51vh;
     width: 40%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 3.75rem;
   }
 }
 
+.article {
+  animation-duration: 4s;
+  animation-name: animCourse;
+  margin: 20px;
+}
+
+@keyframes animCourse {
+  from {
+    margin-left: 100%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 .card {
   border: 2px solid black;
   width: 95%;
@@ -559,16 +641,10 @@ nav {
   text-align: center;
   padding: 30px;
 }
-@media (min-width: 992px) {
-  .footer {
-    display: flex;
-    justify-content: space-between;
-  }
-}
 
 .footer__input {
-  padding: 10px 30px;
-  width: 40%;
+  padding: 10px;
+  width: 60%;
   margin: 0 auto;
   margin-bottom: 10px;
   display: block;
@@ -579,11 +655,43 @@ nav {
 }
 
 .footer__copy {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   padding: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .footer__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .footer__input {
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    margin-right: 5px;
+  }
+
+  .footer__copy {
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

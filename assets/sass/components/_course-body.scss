@@ -4,16 +4,12 @@
 	margin: 0 auto;
 	padding: 5px ;
   margin-bottom: 10px;
-
   }
 
-.course_body{
-  width: 80%;
+.course__body{
+  width: 100%;
   margin: 0 auto;
-  
-
 }
-
  .course__title{
   text-align: center;
 	margin: 10px 0;
@@ -37,7 +33,7 @@
   border-radius: 50% ;
 	border: 2px solid black;
   text-align: center;
- 
+
 
 }
 .course__color{
@@ -50,22 +46,35 @@
   font-family: $poppins;
   font-weight: 700;
   padding: 5px 0;
+  animation-name: course-color;
+  animation-duration: 5s;
+}
+
+@keyframes course-color {
+  from {background-color: $gray;}
+  to {background-color: $orange;}
+}
+
+.course__cont-img{
 
 }
-.course__cont-img{
-  text-align: center;
-}
 .course__image1{
-  height: 40vh;
+  height: 5vh;
+  width: 60%;
 
 }
 .course__icon{
 text-align: center;
 }
-.lista a{
+.course__list a{
  text-decoration: none;
  font-family: $poppins;
  line-height: 1.5;
+ font-size: $small;
+}
+
+.course__item{
+margin-left: 10px;
 }
 a i {
 	transition: all 0.3s linear;
@@ -78,12 +87,32 @@ a:hover i {
 	color: blue;
 }
 
-
-
 .course__twitter:hover {
 	color: #00adb5;
 }
 
 .course__github:hover {
 	color: red;
+}
+
+.course__cont:hover {
+	-webkit-animation: 1s prueba 1;
+	
+}
+
+@-webkit-keyframes prueba{
+      0%{
+      	opacity: 0;
+      	-webkit-transform: scale(0.3);
+      }
+      50%{
+      	opacity: 1;
+      	-webkit-transform: scale(1.1);
+      }
+      70%{
+      	
+      	-webkit-transform: scale(0.9);
+      }
+
+	
 }

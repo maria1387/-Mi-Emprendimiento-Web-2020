@@ -1,12 +1,15 @@
 .footer__btn{
 	background-color: $tangerine;
-	color: $white;
-	padding: 0.7rem 0.9rem;
+	color: $charcoal;
+	font-weight: 700;
+	padding: 0.7rem 0.3rem;
+	border-radius: 8px;
+	font-size: $x-small;
 
 	&--hover:hover{
 		background:$white;
 		color: $sable;
 	}
 
-	
+
 }

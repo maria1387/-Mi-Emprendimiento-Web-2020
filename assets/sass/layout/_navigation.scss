@@ -4,14 +4,11 @@
  }
  .nav{
 	 background:$black;
-	 height: 5rem;
+	 height: 60px;
 	 position: fixed;
 	 top: 0;
  }
 
- .nav__logo {
-	 height: 50px;
- }
  .nav__container{
 	 display: flex;
 	 height: 100%;
@@ -27,14 +24,29 @@
 	text-decoration: none;
 font-family:$poppins;
 font-weight: 700;
+font-size: $x-small;
+--clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
  }
 
+ .nav__item::after{
+	 content: "";
+	 display: block;
+	 background: $white;
+	 width: 90%;
+	 margin-top: 3px;
+	 height: 3px;
+	 clip-path: var(--clippy);
+	 transition: clip-path 1s;
+ }
+.nav__item:hover{
+	--clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
  .nav__img{
 color: white;
 text-align: center;
  }
  .nav__img:hover{
-color: aqua;
+color: $orange;
  }
  .nav__menu{
 display: grid;
@@ -54,7 +66,7 @@ gap: 2em;
 
 .nav__menu{
 	position: fixed;
-	top: 80px;
+	top: 60px;
 	bottom: 0;
 	background:$tangerine;
 	height: 200px;
@@ -73,3 +85,24 @@ gap: 2em;
 
 }
  }
+//logo
+ .nav__logo{
+	height: 40px;
+	animation-duration: 5s;
+	animation-name: animacionLogo;
+	animation-iteration-count: infinite;
+  }
+@keyframes animacionLogo{
+	from {
+		-webkit-transform: rotate(0deg);
+        transform: rotateY(0deg);
+	}
+  50%{
+		-webkit-transform: rotate(180deg);
+        transform: rotateY(180deg);
+	} 
+	to {
+		-webkit-transform: rotate(360deg);
+        transform: rotateY(360deg);
+		}
+}
