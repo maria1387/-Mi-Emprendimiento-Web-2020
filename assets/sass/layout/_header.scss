@@ -2,12 +2,12 @@
 .header{
 	height:32vh; 
 	width: 100%;
-  overflow: hidden;
-  margin-top: 60px;
+  	overflow: hidden;
+  	margin-top: 60px;
 	background-size: cover;
 
  @include respond-to('large'){
-height: 51vh;
+	height: 51vh;
 	width: 40%;
 	margin: 0 auto;
 	margin-top: 3.75rem;

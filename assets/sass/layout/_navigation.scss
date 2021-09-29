@@ -22,10 +22,10 @@
  .nav__item{
 	color: $white;
 	text-decoration: none;
-font-family:$poppins;
-font-weight: 700;
-font-size: $x-small;
---clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+	font-family:$poppins;
+	font-weight: 700;
+	font-size: $x-small;
+	--clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
  }
 
  .nav__item::after{
@@ -42,16 +42,16 @@ font-size: $x-small;
 	--clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
  .nav__img{
-color: white;
-text-align: center;
+	color: white;
+	text-align: center;
  }
  .nav__img:hover{
-color: $orange;
+	color: $orange;
  }
  .nav__menu{
-display: grid;
-grid-auto-flow: column;
-gap: 2em;
+	display: grid;
+	grid-auto-flow: column;
+	gap: 2em;
 
  }
  .nav__label, .nav__input{
