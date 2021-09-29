@@ -159,9 +159,17 @@ table {
     background-color: #FFA500;
   }
 }
+.course__cont-img {
+  text-align: center;
+}
+
 .course__image1 {
-  height: 5vh;
-  width: 60%;
+  height: 30vh;
+}
+@media (min-width: 992px) {
+  .course__image1 {
+    height: 45vh;
+  }
 }
 
 .course__icon {
@@ -200,20 +208,20 @@ a:hover i {
 }
 
 .course__cont:hover {
-  -webkit-animation: 1s prueba 1;
+  animation: 1s prueba 1;
 }
 
-@-webkit-keyframes prueba {
+@keyframes prueba {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
   }
   50% {
     opacity: 1;
-    -webkit-transform: scale(1.1);
+    -transform: scale(1.1);
   }
   70% {
-    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
   }
 }
 .footer__btn {
@@ -354,22 +362,6 @@ nav {
   }
 }
 
-.article {
-  animation-duration: 4s;
-  animation-name: animCourse;
-  margin: 20px;
-}
-
-@keyframes animCourse {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 .card {
   border: 2px solid black;
   width: 95%;

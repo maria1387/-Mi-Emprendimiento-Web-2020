@@ -56,12 +56,14 @@
 }
 
 .course__cont-img{
-
+  text-align: center;
 }
-.course__image1{
-  height: 5vh;
-  width: 60%;
 
+.course__image1{
+height: 30vh;
+@include respond-to('large'){
+  height: 45vh;
+}
 }
 .course__icon{
 text-align: center;
@@ -96,22 +98,22 @@ a:hover i {
 }
 
 .course__cont:hover {
-	-webkit-animation: 1s prueba 1;
+	animation: 1s prueba 1;
 	
 }
 
-@-webkit-keyframes prueba{
+@keyframes prueba{
       0%{
       	opacity: 0;
-      	-webkit-transform: scale(0.3);
+      	transform: scale(0.3);
       }
       50%{
       	opacity: 1;
-      	-webkit-transform: scale(1.1);
+      	-transform: scale(1.1);
       }
       70%{
       	
-      	-webkit-transform: scale(0.9);
+      	transform: scale(0.9);
       }
 
 	
