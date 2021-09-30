@@ -52,7 +52,7 @@ table {
   background-color: #FFAF6D;
   color: #2E1503;
   font-weight: 700;
-  padding: 0.7rem 0.3rem;
+  padding: 0.5rem 0.3rem;
   border-radius: 8px;
   font-size: 12px;
 }
@@ -264,18 +264,21 @@ a:hover i {
   margin: 0 auto;
   margin-bottom: 10px;
   display: block;
+  font-size: 12px;
+  border-radius: 6px;
 }
 .footer__input--focus:focus {
   background: #FFAF6D;
   box-shadow: 0 0 0 0.25rem;
 }
 .footer__input .footer__copy {
-  width: 80%;
-  margin: 0 auto;
-  padding: 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  margin-bottom: 20px;
+  font-size: 14px;
+  word-spacing: 10px;
+}
+.footer__input .footer__p {
+  margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
@@ -293,7 +296,7 @@ a:hover i {
   }
 
   .footer__input {
-    padding: 10px;
+    padding: 7px;
     width: 200px;
     margin: 0 auto;
     display: block;
@@ -703,7 +706,7 @@ nav {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding: 30px;
+  padding: 30px 70px;
   line-height: 2;
 }
 
