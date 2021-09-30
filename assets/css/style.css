@@ -197,8 +197,8 @@ table {
   }
 }
 .course__image1:hover {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
 }
 
 .course__icon {
@@ -271,14 +271,13 @@ a:hover i {
   background: #FFAF6D;
   box-shadow: 0 0 0 0.25rem;
 }
-.footer__input .footer__copy {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  word-spacing: 10px;
+
+.footer__p {
+  margin-bottom: 30px;
 }
-.footer__input .footer__p {
-  margin-bottom: 10px;
+
+.footer__copy {
+  margin: 20px 0 10px 0;
 }
 
 @media (min-width: 768px) {
@@ -305,11 +304,14 @@ a:hover i {
 
   .footer__copy {
     padding: 10px;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
-    font-size: 12px;
     display: flex;
     justify-content: space-around;
+    margin: 0;
+  }
+
+  .footer__p {
+    margin-bottom: 0;
   }
 }
 nav {
@@ -706,8 +708,9 @@ nav {
   background-color: #000000;
   color: #ffffff;
   text-align: center;
-  padding: 30px 70px;
-  line-height: 2;
+  padding: 30px 60px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
