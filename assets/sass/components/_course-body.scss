@@ -13,10 +13,7 @@
 .course__title{
   text-align: center;
 	margin: 10px 0;
-  font-family: $ubuntu;
-  font-weight: 700;
-  font-size: $medium;
-  line-height: 1.5;
+  @include title;
 }
 .course__description{
   line-height: 1.5;
@@ -53,6 +50,7 @@
 }
 .course__icon{
 text-align: center;
+padding-bottom: 15px;
 }
 .course__list{
   List-style-type: circle;

@@ -97,11 +97,11 @@ table {
 }
 
 .card__container {
-  width: 93%;
+  width: 90%;
   margin: 0 auto;
   border: 1.5px dotted #515151;
-  padding: 7px;
-  margin-bottom: 8px;
+  padding: 5px;
+  margin-bottom: 10px;
 }
 .card__container__body {
   width: 80%;
@@ -204,7 +204,6 @@ table {
 
 .course__icon {
   text-align: center;
-  padding-bottom: 15px;
 }
 
 .course__list {
@@ -275,8 +274,7 @@ a:hover i {
 
   .footer__item {
     display: flex;
-    align-items: inherit;
-    justify-content: center;
+    align-items: center;
     justify-content: space-around;
     margin-left: 250px;
   }
@@ -292,7 +290,7 @@ a:hover i {
     padding: 10px;
     font-weight: 400;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -362,7 +360,7 @@ nav {
 .nav__menu {
   display: grid;
   grid-auto-flow: column;
-  gap: 1.1em;
+  gap: 2em;
 }
 
 .nav__label, .nav__input {
@@ -705,4 +703,4 @@ nav {
   font-size: 14px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.scss.map */

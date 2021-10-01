@@ -20,3 +20,10 @@
 		   + 'Please make sure it is defined in `$breakpoints` map.';
 	}
   }
+
+  @mixin title {
+	font-family: $ubuntu;
+	font-weight: 700;
+	font-size: $medium;
+	line-height: 1.5;
+  }
