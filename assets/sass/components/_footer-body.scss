@@ -34,21 +34,24 @@
 	display: flex;
 	align-items: center;
 	justify-content:space-around;
+	margin-left: 250px;
 }
 .footer__input{
-	padding: 7px;
+	padding: 10px;
 	width: 200px;
 	margin:  0 auto;
 	display: block;
 	margin-right: 5px;
+
 }
 
 .footer__copy{
 	padding: 10px;
 	font-weight: 400;
 	display: flex;
-	justify-content: space-around;
-	margin:0;
+	justify-content: space-between;
+	align-items: center;
+	
 }
 .footer__p{
 	margin-bottom: 0;

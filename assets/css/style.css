@@ -1,4 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Ubuntu:wght@400;700&display=swap");
+@keyframes translate {
+  0% {
+    transform: translateX(150px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.label {
+  animation: translate 2s linear infinite alternate;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.inner__nut,
+.external__nut {
+  animation: rotate 2s linear infinite;
+  transform-origin: 80% 80%;
+}
+
+.course__animation {
+  height: 230px;
+}
+
+@media (max-width: 700px) {
+  .course__animation {
+    height: 130px;
+  }
+}
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,7 +87,7 @@ table {
   background-color: #FFAF6D;
   color: #2E1503;
   font-weight: 700;
-  padding: 0.5rem 0.3rem;
+  padding: 0.6rem 0.3rem;
   border-radius: 8px;
   font-size: 12px;
 }
@@ -163,42 +198,8 @@ table {
   animation-duration: 5s;
 }
 
-@keyframes course-color {
-  from {
-    background-color: #515151;
-  }
-  to {
-    background-color: #FFA500;
-  }
-}
 .course__cont-img {
   text-align: center;
-}
-
-.course__image1 {
-  height: 30vh;
-  animation-duration: 4s;
-  animation-name: animCourse;
-}
-@media (min-width: 992px) {
-  .course__image1 {
-    height: 45vh;
-  }
-}
-
-@keyframes animCourse {
-  from {
-    margin-left: 100%;
-    width: 100%;
-  }
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
-.course__image1:hover {
-  -webkit-transform: scale(1.7);
-  transform: scale(1.7);
 }
 
 .course__icon {
@@ -241,23 +242,6 @@ a:hover i {
   color: red;
 }
 
-.course__cont:hover {
-  animation: 1s course__cont 1;
-}
-
-@keyframes course__cont {
-  0% {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  50% {
-    opacity: 1;
-    -transform: scale(1.1);
-  }
-  70% {
-    transform: scale(0.9);
-  }
-}
 .footer__input {
   padding: 10px;
   width: 60%;
@@ -292,10 +276,11 @@ a:hover i {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-left: 250px;
   }
 
   .footer__input {
-    padding: 7px;
+    padding: 10px;
     width: 200px;
     margin: 0 auto;
     display: block;
@@ -306,8 +291,8 @@ a:hover i {
     padding: 10px;
     font-weight: 400;
     display: flex;
-    justify-content: space-around;
-    margin: 0;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .footer__p {

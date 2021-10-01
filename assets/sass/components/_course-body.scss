@@ -48,38 +48,8 @@
   animation-duration: 5s;
 }
 
-@keyframes course-color {
-  from {background-color: $gray;}
-  to {background-color: $orange;}
-}
-
 .course__cont-img{
   text-align: center;
-}
-
-.course__image1{
-  height: 30vh;
-  animation-duration: 4s;
-	animation-name: animCourse;
-  @include respond-to('large'){
-  height: 45vh;
-}
-  }
-  
-  @keyframes animCourse {
-	from {
-	  margin-left: 100%;
-	  width: 100%;
-	}
-	to {
-	  margin-left: 0%;
-	  width: 100%;
-	}
-}
-
-.course__image1:hover{ 
-  -webkit-transform: scale(1.7);
-  transform: scale(1.7)
 }
 .course__icon{
 text-align: center;
@@ -116,26 +86,3 @@ a:hover i {
 .course__github:hover {
 	color: red;
 }
-
-.course__cont:hover {
-	animation: 1s course__cont 1;
-	
-}
-
-@keyframes course__cont{
-      0%{
-      	opacity: 0;
-      	transform: scale(0.5);
-      }
-      50%{
-      	opacity: 1;
-      	-transform: scale(1.1);
-      }
-      70%{
-      	
-      	transform: scale(0.9);
-      }
-
-	
-}
-
